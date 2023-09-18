@@ -67,6 +67,7 @@ body::-webkit-scrollbar-thumb {
 .footerMod__ul {
     height: 100%;
     width: 80%;
+    text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -106,6 +107,7 @@ body::-webkit-scrollbar-thumb {
 
     .mainMod__img1 {
         width: 90vw;
+        min-width: 300px;
     }
 
     .mainMod,.sectionMod {
@@ -118,7 +120,48 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 400px) {
+    .contBtn {
+        position: relative;
+    }
+
+    .contUlMod {
+        width: 100%;
+        position: absolute;
+        top: 5.5vh;
+        right: 0;
+    }
+
+    .mainMod {
+        height: 40vh;
+    }
+
     .ulMod {
         margin-top: .5%;
     }
+
+    .sectionMod {
+        height: 90vh;
+    }
+
+    .sectionMod__rowMod {
+        flex-direction: column;
+    }
+
+    .sectionMod__contImg {
+        height: calc(100% / 3);
+        margin: 1% 0;
+    }
+
+    .sectionMod__imgSlider {
+        width: 80%;
+        height: 20vh;
+    }
+
+    .footerMod__ulMod {
+        width: 100%;
+        display: grid;
+        grid-template: repeat(2,1fr)/repeat(2,1fr);
+        align-items: center;
+    }
+    
 }
