@@ -1,0 +1,66 @@
+body {
+    width: 100%;
+}
+
+.mainServicios {
+    padding: 2%;
+}
+
+.mainServicios__a {
+    width: 50%;
+}
+
+.mainServicios__row {
+    height: 50vh;
+}
+
+.modSizeCardInf {
+    width: 50%;
+}
+
+.mainServicios__cardInfo {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .mainServicios__container {
+        width: 100%;
+    }
+    
+    .mainServicios__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .mainServicios__cardInfo {
+        width: 80%;
+    }
+
+    .mainServicios__a {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .modHeightRow {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .mainServicios {
+        padding: 0;
+        background-color: aliceblue;
+    }
+
+    .modAasesoria {
+        height: 100%;
+        height: 30vh;
+    }
+}
