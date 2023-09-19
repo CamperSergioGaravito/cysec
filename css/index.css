@@ -1,5 +1,7 @@
 body {
     width: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -8,6 +10,20 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
     background-color: rgb(255, 255, 255);
+}
+
+.contBtns {
+    width: 150px;
+    bottom: 5%;
+}
+
+.contBtns__btn {
+    width: 70px;
+    height: 70px;
+}
+
+.contBtns__btn:hover {
+    box-shadow: 0 0 5px 5px #617467;
 }
 
 .navMod {

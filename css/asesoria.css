@@ -1,0 +1,34 @@
+.mainAsesoriaMod {
+    height: 120vh;
+}
+
+.mainAsesoriaMod__formImg {
+    width: 120px;
+    top: 10vh;
+}
+
+.mainAsesoriaMod__imgInput {
+    width: 40px;
+}
+
+.mainAsesoriaMod__sep {
+    height: 60px;
+}
+
+.mainAsesoriaMod__imgFBo {
+    width: 80px;
+}
+
+.mainAsesoriaMod__contSubm {
+    height: 10%;
+}
+
+.footerMod {
+    height: 25vh;
+}
+
+@media (min-width: 768px) {
+    .mainAsesoriaMod__form {
+        width: 500px;
+    }
+}
