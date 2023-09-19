@@ -1,0 +1,56 @@
+.mainHackMod__separador {
+    height: 50vh;
+}
+
+.mainHackMod__contImg {
+    border-radius: 25px;
+    width: 50%;
+    height: 75%;
+}
+
+.mainHackMod__contP {
+    width: 50%;
+}
+
+.mainHackMod__p {
+    font-size: 32pt;
+}
+
+.pModDes {
+    font-size: 28pt;
+}
+
+@media (max-width: 1440px) {
+    .mainHackMod__p {
+        font-size: 18pt;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainHackMod__separador {
+        flex-direction: column;
+        height: 60vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mainHackMod__contImg {
+        width: 96%;
+        height: 40vh;
+    }
+
+    .mainHackMod__p {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .mainHackMod__contP {
+        width: 90%;
+    }
+}
+
+@media (max-width: 425px) {
+    .mainHackMod__p {
+        font-size: 12pt;
+    }
+}
