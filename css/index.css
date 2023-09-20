@@ -32,7 +32,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contBtn {
-    width: 80%;
+    width: 100%;
 }
 
 .nav-link {
@@ -94,8 +94,11 @@ body::-webkit-scrollbar-thumb {
     }
 
     .ulMod {
+        position: absolute;
         background-color: white;
-        margin-top: 2.5%;
+        top: 5.2vh;
+        width: 100%;
+        margin: 0;
         flex-direction: column;
         align-items: end;
     }
@@ -103,6 +106,7 @@ body::-webkit-scrollbar-thumb {
     .nav-item {
         width: 100%;
         text-align: center;
+        top: 5vh;
     }
 
     .nav-item:hover {
@@ -128,51 +132,58 @@ body::-webkit-scrollbar-thumb {
         min-width: 300px;
     }
 
-    .mainMod,.sectionMod {
-        height: 50vh;
+    .mainMod {
+        height: 90vh;
+    }
+
+    .sectionMod {
+        height: 70vh;
+        object-fit: scale-down;
+    }
+
+    .sectionMod__contCarrusel {
+        height: 90%;
+    }
+
+    .sectionMod {
+        height: 110vh;
+    }
+
+    .sectionMod__rowMod {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: black;
+        align-items: center;
+        height: 100vh;
     }
 
     .sectionMod__contImg {
-        height: 50vh;
+        height: 30vh;
+        padding: 3%;
+    }
+
+    .sectionMod__imgSlider {
+        width: 50%;
+        min-width: 400px;
+        object-fit: cover;
     }
 }
 
 @media (max-width: 400px) {
     .contBtn {
         position: relative;
+        width: 50%;
     }
 
     .contUlMod {
         width: 100%;
         position: absolute;
-        top: 5.5vh;
         right: 0;
+        top: .5vh;
     }
 
     .mainMod {
         height: 40vh;
-    }
-
-    .ulMod {
-        margin-top: .5%;
-    }
-
-    .sectionMod {
-        height: 90vh;
-    }
-
-    .sectionMod__rowMod {
-        flex-direction: column;
-    }
-
-    .sectionMod__contImg {
-        height: calc(100% / 3);
-        margin: 1% 0;
-    }
-
-    .sectionMod__imgSlider {
-        width: 80%;
-        height: 20vh;
     }
 
     .footerMod__ulMod {
@@ -182,4 +193,20 @@ body::-webkit-scrollbar-thumb {
         align-items: center;
     }
     
+    .sectionMod__rowMod {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+    }
+
+    .sectionMod__contImg {
+        height: auto;
+        padding: 0;
+    }
+
+    .sectionMod__imgSlider {
+        width: 375px;
+        object-fit: contain;
+    }
+
 }
